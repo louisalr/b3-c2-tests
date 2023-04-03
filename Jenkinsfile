@@ -13,7 +13,7 @@ pipeline{
         stage('Run Pytest'){
             steps{
                 sh '. env/Scripts/activate'
-                sh 'cd env && pytest -v'
+                sh 'cd env && python3 -m tests.test_calculator'
             }
         }
     }
