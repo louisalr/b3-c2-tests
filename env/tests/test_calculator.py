@@ -129,6 +129,10 @@ class TestCalculatrice(TestCase):
 
     def test_squareroot_in_substraction(self):
         self.assertEqual(Calculator.calculate("2-√4"), 0)
+
+    # Fail as the result is incorrect
+    def test_squareroot_in_substraction_error(self):
+        self.assertEqual(Calculator.calculate("2-√4"), 2)
     
 #endregion
 
