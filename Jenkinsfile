@@ -17,4 +17,11 @@ pipeline{
             }
         }
     }
+    post {
+        failure {
+            mail to: 'louis.alary@epsi.fr',
+                subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
+                body: "Something is wrong with ${env.BUILD_URL}"
+        }
+    }
 }
