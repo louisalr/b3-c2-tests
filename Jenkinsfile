@@ -18,7 +18,7 @@ pipeline{
         stage('Run Pytest'){
             steps{
                 sh 'source /env/bin/activate'
-                sh 'pytest -v'
+                sh 'cd env && pytest -v'
             }
         }
     }
