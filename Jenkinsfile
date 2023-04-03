@@ -1,7 +1,12 @@
 pipeline{
     agent any
     stages{
-        // Install python packages 
+        // Install python packages *
+        stage('Ls file'){
+            steps{
+                sh 'ls -l'
+            }
+        }
         stage('Python Requirements'){
             steps{
                 sh 'python -m venv env'
