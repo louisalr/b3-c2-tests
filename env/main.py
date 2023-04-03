@@ -1,4 +1,4 @@
-from env.calculator import Calculator
+from calculator import *
 from Include.colors import bcolors
 import os
 
