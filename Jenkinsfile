@@ -6,7 +6,7 @@ pipeline{
             steps{
                 sh 'python3 -m venv env'
                 sh '. env/Scripts/activate'
-                sh 'pip install -r env/requirements.txt'
+                sh 'pip install -r requirements.txt'
             }
         }
         // Run the tests
