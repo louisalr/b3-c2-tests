@@ -22,7 +22,7 @@ pipeline{
             discordSend description: "Failed Pipeline ${currentBuild.fullDisplayName}",
                         link: env.BUILD_URL
                         title: env.JOB_NAME
-                        webhookURL : "https://discord.com/api/webhooks/1092702382858707024/ijtbk1G6fJnK6HttmfYNb-MAlB-74ioPdEvJlacNk1UtvtMVGaIj938Cxt9Xq0X2-ekp"
+                        webhookURL : "https://discord.com/api/webhooks/1092712641128042576/R4DeY0BLeIgjgEATdSDqy8pMlzR9oEzBUaoaccaznSb-2iSl8Gtf7F6l8MNJEHP6x56H"
 
         }
     }
